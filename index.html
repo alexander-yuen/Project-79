@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Welcome to PIZZERIA
+    </title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+    <a class="active" href="#">Pizzeria</a>
+    <div class="topnaz-right">
+        <a href="#viewblock">View Menu</a>
+        <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div class="img-div">
+            <img class="img-responsive" src="https://lh3.googleusercontent.com/proxy/R-du2OuhgGlF1V1RSCoALnbN7UNt6sgiTfzpkWLOfxWJ1PxltZ0JP-DeUC6KlkBzEJU6431zUvqkslp8bamDJ1kkmk0vwqodhVz-ix2dw7rdB9s9M_LbQ9Gk6_Rs5LLKVKR0IQLIwHKcp_KedmG5iIzk9JZn">
+        </div>
+        <!-- Add menu-div here and create button to call getmenu()-->
+    </div>
+<div class="menu-div">
+    <button id="menu-list" onclick="getmenu()">Show Menu</button>
+        <div id="menu_div"></div>
+        </div>
+    </div>
+
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add your toppings?"/><br>
+            <button id="add_toppings" onclick="add_item()">Recommend a New Pizza</button>
+        </div>
+
+    </div>
+<!-- Add display_menu div here -->
+<div class="block2">
+    <div id="display_addedmenu">
+
+    </div>
+</div>
+
+<img class="img-responsive" src="https://cheatdaydesign.com/wp-content/uploads/2019/04/Pizza-Toppings.jpg">
+</body>
